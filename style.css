@@ -1,24 +1,26 @@
 .main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    padding: 0px;
+    margin: 0px;}
 
 #calculator{
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color:grey;
-
     margin-top: 50px;
 }
 
-.big{
-    width:200px;
-}
  
 div .clear{
     background-color: darkred;
 } 
+
+.centice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div .func{
+    color: white;
+}
+
+
 

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
+    <link rel="icon" type="image/x-icons" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmOK5bMR--dP1NxfT2GDvVooBCNABWMorfkw&s">
 
     <link rel="stylesheet" href="./style.css">
     <!--  bootstrap -->
@@ -12,80 +13,99 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
 </head>
-<body class="main">
-    <div id="calculator" class="card text-center mx-auto mt-5" style="max-width: 500px;">
-        <div class="card-header" style="font-weight: 600;">
-            CALCULATOR
-        </div>
-        <div class="card-body">
-            <div class="row mb-2">
-                <div class="col-12">
-                    <input type="text" id="result" class="form-control" style="text-align: right;" readonly placeholder="0">
+<body class="main w-100">
+    <div class="row w-100">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 ms-2 ms-md-0 ">
+            <div id="calculator" class="card shadow">
+                <div class="card-header text-center fw-bold">
+                    CALCULATOR
                 </div>
-            </div>
-            <div class="row mb-2">
-                <div class="col-3">
-                    <button class="btn btn-dark w-100 btn-custom" onclick="display(7)" type="button">7</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn btn-dark w-100 btn-custom" onclick="display(8)" type="button">8</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn btn-dark w-100 btn-custom" onclick="display(9)" type="button">9</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn btn-danger w-100 btn-custom" onclick="clearall('C')" type="button">C</button>
-                </div>
-            </div>
-            <div class="row mb-2">
-                <div class="col-3">
-                    <button class="btn btn-dark w-100 btn-custom" onclick="display(4)" type="button">4</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn btn-dark w-100 btn-custom" onclick="display(5)" type="button">5</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn btn-dark w-100 btn-custom" onclick="display(6)" type="button">6</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn btn-dark w-100 btn-custom" onclick="display('+')" type="button">+</button>
-                </div>
-            </div>
-            <div class="row mb-2">
-                <div class="col-3">
-                    <button class="btn btn-dark w-100 btn-custom" onclick="display(1)" type="button">1</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn btn-dark w-100 btn-custom" onclick="display(2)" type="button">2</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn btn-dark w-100 btn-custom" onclick="display(3)" type="button">3</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn btn-dark w-100 btn-custom" onclick="display('-')" type="button">-</button>
-                </div>
-            </div>
+                <div class="card-body centice flex-column">
+                    <div class="row w-100 mb-2">
+                        <div class="col-12">
+                            <input type="text" id="result" class="form-control shadow" style="text-align: right;" readonly placeholder="0">
+                        </div>
+                    </div>
+                    <div class="row w-100 mb-2">
+                        <div class="col-3">
+                            <button class="btn btn-dark fw-bold  w-100 btn-custom" onclick="display(7)" type="button">7</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-dark fw-bold w-100 btn-custom" onclick="display(8)" type="button">8</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-dark fw-bold w-100 btn-custom" onclick="display(9)" type="button">9</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-danger shadow fw-bold w-100 btn-custom" onclick="clearall('C')" type="button">C</button>
+                        </div>
+                    </div>
+                    <div class="row w-100 mb-2">
+                        <div class="col-3">
+                            <button class="btn btn-dark fw-bold w-100 btn-custom" onclick="display(4)" type="button">4</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-dark fw-bold w-100 btn-custom" onclick="display(5)" type="button">5</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-dark fw-bold w-100 btn-custom" onclick="display(6)" type="button">6</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-dark fw-bold w-100 btn-custom" onclick="display('+')" type="button">+</button>
+                        </div>
+                    </div>
+                    <div class="row w-100 mb-2">
+                        <div class="col-3">
+                            <button class="btn btn-dark fw-bold w-100 btn-custom" onclick="display(1)" type="button">1</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-dark fw-bold w-100 btn-custom" onclick="display(2)" type="button">2</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-dark fw-bold w-100 btn-custom" onclick="display(3)" type="button">3</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-dark fw-bold w-100 btn-custom" onclick="display('-')" type="button">-</button>
+                        </div>
+                    </div>
+        
+                    
+        
+                    <div class="row w-100 mb-2 centice">
+                        <div class="col-3 centice">
+                            <button class="btn btn-dark fw-bold fw-bold w-100 btn-custom" onclick="display(3.14)" type="button">π</button>
+                        </div>
+                        <div class="col-3 ">
+                            <button class="btn btn-dark fw-bold w-100 btn-custom" onclick="display(0)" type="button">0</button>
+                        </div>
+                        <div class="col-3 centice">
+                            <button class="btn btn-dark fw-bold w-100 btn-custom" onclick="display('/')" type="button">/</button>
+                        </div>
+                        <div class="col-3 centice">
+                            <button class="btn btn-dark fw-bold w-100 btn-custom" onclick="display('*')" type="button">*</button>
+                        </div>
+                    </div>
 
-            
 
-            <div class="row mb-2">
-                <div class="col-3">
-                    <button class="btn btn-dark w-100 btn-custom" onclick="backspace('←')" type="button">←</button>
+                    <div class="row w-100 mb-2 centice">
+                        <div class="col-6 ">
+                            <button class="btn shadow btn-success fw-bold w-100 btn-custom" onclick="backspace('←')" type="button">←</button>
+                        </div>
+                        
+                        <div class="col-6 centice">
+                            <button class="btn  btn-dark w-100 fw-bold btn-custom" onclick="equal('=')" type="button">=</button>
+
+                        </div>
+                        
+                    </div>
                 </div>
-                <div class="col-3">
-                    <button class="btn btn-dark w-100 btn-custom" onclick="display('/')" type="button">/</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn btn-dark w-100 btn-custom" onclick="display('*')" type="button">*</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn btn-dark w-100 btn-custom" onclick="equal('=')" type="button">=</button>
+                <div class="card-footer  text-muted w-100 text-center">
+                    CAS10
                 </div>
             </div>
         </div>
-        <div class="card-footer text-muted">
-            CAS10
-        </div>
+        <div class="col-md-4"></div>
     </div>
     <script src="./calc.js"></script>
 </body>
